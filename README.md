@@ -100,31 +100,8 @@ The emulator emulates these components:
 
 ## 🕹️ Compatibility
 
-There should be a lot of NES games that work with this emulator, but I have not tested most of the NES library. A quick reference is to look up what mapper a game uses, because Mappers 0, 1, 2, 3, and 4 are supported. Games that use other mappers will refuse to start since they lack support.
+You can play so many different NES games with this emulator! There should be a lot of NES games that work with this emulator, but I have not tested most. A quick reference is to look up what mapper a game uses, because Mappers 0, 1, 2, 3, and 4 are supported. Games that use other mappers will refuse to start since they lack support.
 
-Working:
-
-- Castlevania II: Simon's Quest - Working ✅
-- Contra - Working ✅
-- Lolo's Adventure - Working ✅
-- Megaman 1 - Working ✅ (Has a Whining/Whistle Sound)
-- Megaman 2 - Working ✅ (Has a Whining/Whistle Sound)
-- Super Mario Bros. - Working ✅
-- Super Mario Bros. 2 - Working ✅
-- Super Mario Bros. 3 - Working ✅
-
-Partially Working:
-
-- Kirby's Adventure
-
-Not Working (Major Issues)
-
-- Tetris
-
-Not Supported:
-
-- Mike Tyson's Punch Out
-- Battletoads
 
 ## ⚠️ Important Note: If you encounter issues with video or sound, restart the emulator. There is a bug where previous games can cause issues with new ROM loads.
 
