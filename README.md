@@ -9,9 +9,24 @@
 
 #  Rusty NES Emulator
 
-**Rusty NES** is a Nintendo Entertainment System (NES) emulator written in **Rust**, featuring a graphical user interface and customizable video/audio settings.
+**Rusty NES** is a Nintendo Entertainment System (NES) emulator written in **Rust**, featuring a graphical user interface and customizable video/audio settings. RustyNES lets you customize the display to give you television features and coloration to let you produce the version of the game that you expect and give you a more accurate and realistic representation according to your memeories or wishes. This is a new spirit of emulator that diverges from traditional emulators, but at the same time uses techniques pioneered by full featured and feature rich emulators of the past.
 
 ---
+
+
+## 🆕 New in v2 (5-14-2026)
+Fixes, Upgrades, and Updates have been added to RustyNES v2.
+
+- USB Joystick/Controller Support Added
+- Fullscreen is added with a button pressing "F"
+- New Video Options
+- Sprite Viewer Added
+- Improved Sound Engine
+- Color Adjustments are more normal/accurate
+- Hide Edges (Overscan) Added for Super Mario Bros. 3
+- Fixed a bug where loading another game after a game was loaded caused overflow
+
+Docs below will be updated to reflect the changes later.
 
 ## 🖥️ Core Architecture
 
@@ -32,7 +47,7 @@ The emulator emulates these components:
 
 ### 🖥 Display & Graphics
 
-- **Resolution:** 256×240 native NES resolution with scaling, and a special custom CRT TV video option.
+- **Resolution:** 256×240 native NES resolution with scaling, and a special custom CRT TV video options.
 
 #### Video Modes
 - **Default Mode**
@@ -59,7 +74,7 @@ The emulator emulates these components:
 
 - **44.1 kHz** mono audio output  
 - **4096-sample** audio buffer  
-- Dynamic audio synchronization based on buffer fullness  
+- Dynamic audio synchronization
 - Automatic buffer management
 
 ---
@@ -76,13 +91,16 @@ The emulator emulates these components:
 | **S** | Start |
 | **Arrow Keys** | D-Pad |
 
+**USB Controller Support Added in v2**
+
 ---
 
 ### 📋 Menu System
 
 - **ESC** key toggles the pause menu  
 - Built-in **ROM file picker** (filters for `.nes` files)  
-- Runtime configuration for **video and audio settings**  
+- Change **video and audio settings** Live
+- Reproduce Classic TV Effects
 - Multiple FPS modes:
   - **NTSC (60 Hz)**
   - **PAL (50 Hz)**
@@ -100,10 +118,9 @@ The emulator emulates these components:
 
 ## 🕹️ Compatibility
 
-You can play so many different NES games with this emulator! There should be a lot of NES games that work with this emulator, but I have not tested most. A quick reference is to look up what mapper a game uses, because Mappers 0, 1, 2, 3, and 4 are supported. Games that use other mappers will refuse to start since they lack support.
+You can play many different NES games with this emulator! There should be a lot of NES games that work with this emulator, but I have not tested heavily. A quick reference is to look up what mapper a game uses, because Mappers 0, 1, 2, 3, and 4 are supported. Games that use other mappers will refuse to start since they lack support.
 
-
-## ⚠️ Important Note: If you encounter issues with video or sound, restart the emulator. There is a bug where previous games can cause issues with new ROM loads.
+.
 
 THIS IS A COMPLETELY CUSTOM CODE, NO NINTENDO COPYRIGHTED MATERIAL IS USED IN THIS. GAMES ARE NOT INCLUDED. GAMES ARE NOT RELEVANT TO THIS PROJECT'S CODE AS PROVIDED HERE.
 
